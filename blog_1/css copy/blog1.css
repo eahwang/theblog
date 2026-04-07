@@ -1,0 +1,118 @@
+/* BODY */
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #eef2f3;
+    color: #333;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #00684A; /* nav background */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* space between buttons */
+}
+
+/* All nav links as buttons */
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px; /* rounded buttons */
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: #F26B9A; /* pink button color */
+    transition: all 0.3s ease;
+}
+
+
+/* PAGE HEADING */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+/* INTRO BOX */
+.intro {
+    width: 90%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin: 0 auto 50px auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* CONTAINER FOR ALL ESSENTIALS */
+.essentials-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* EACH SECTION = FLEX ROW */
+.essential-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+/* ALTERNATE LAYOUT */
+.essential-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* IMAGES */
+.essential-item img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: block;
+}
+
+/* TEXT BOX */
+.text-box {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* TEXT INSIDE */
+.text-box p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* BACK TO HOME LINK ONLY */
+.back-home {
+    display: block;
+    text-align: center;
+    margin: 40px 0 60px 0;
+    text-decoration: none;
+    color: #00684A;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.back-home:hover {
+    color: #A8228E;
+}
