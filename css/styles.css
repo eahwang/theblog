@@ -11,6 +11,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -51,7 +52,7 @@ header h1 {
     margin: 0;
 }
 
-/* ABOUT ME */
+/* ABOUT ME / TOP IMAGE */
 .about-me {
     width: 100%;
     text-align: center;
@@ -133,6 +134,24 @@ header h1 {
     gap: 12px;
 }
 
+/* SHARED INTRO TEXT */
+.intro-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+/* PAGE TITLES */
+.recovery-page-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00684A;
+    margin: 0 0 10px 0;
+}
+
 /* BLOG PREVIEWS */
 .blog-footer {
     background-color: #00684A;
@@ -184,7 +203,7 @@ header h1 {
     transition: all 0.3s ease;
 }
 
-/* ESSENTIALS LIST (shared across blog_1 and blog_2) */
+/* ESSENTIALS / SHARED CARD LIST */
 .essentials-list {
     display: flex;
     flex-direction: column;
@@ -195,18 +214,14 @@ header h1 {
     box-sizing: border-box;
 }
 
-
-
-/* ESSENTIAL CARD (shared across blog_1 and blog_2) */
+/* ESSENTIAL CARD */
 .essential-card {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 28px;
     padding: 20px;
-    background-image: white;
-    background-size: cover;
-    background-position: center;
+    background-color: white;
     border: 1px solid #00140C;
     border-radius: 12px;
     box-sizing: border-box;
@@ -247,7 +262,7 @@ header h1 {
     color: #A8228E;
 }
 
-/* BLOG 2 — RECOVERY PAGE */
+/* RECOVERY CONTAINER */
 .recovery-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -263,10 +278,64 @@ header h1 {
     margin: 32px 0;
 }
 
-.recovery-page-title {
+/* FOOTER IMAGE */
+.footer-image {
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.footer-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* OPTIONAL FOOTER */
+.site-footer {
+    background-color: #00684A;
+    color: white;
     text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    color: #00684A;
-    margin: 40px 0 10px;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .intro-overlay {
+        padding: 30px 20px;
+    }
+
+    .intro-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .essential-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .essential-card .image-box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .essential-card .text-box {
+        width: 100%;
+    }
+
+    .recovery-page-title {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 10px;
+        padding: 15px 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
